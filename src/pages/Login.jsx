@@ -15,7 +15,7 @@ class App extends React.Component  {
     return (
       <div>
         <React.Fragment>
-            <HeaderLoto></HeaderLoto>
+            <HeaderLoto/>
             <Container style={{ margin: '5em 0em 0em', padding: '3em 0em 0em 1em' }} textAlign='left'>
                 <div style={{ marginBottom: '2em' }}>
                     <Header size='huge'>กรุณากรอก<br/>เบอร์โทรศัพท์มือถือ</Header>

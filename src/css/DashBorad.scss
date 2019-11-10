@@ -1,0 +1,135 @@
+.DashBorad{
+    background: url('../images/towerGray.png');
+    // background-color: red;
+    background-repeat: repeat-x;
+    background-size: 200%;
+    background-position: left bottom;
+}
+
+.DashBorad{
+
+    $theme-color1: #128ed6;
+
+    //Modifile
+    ::-webkit-input-placeholder {
+        color:#a3a3a3;
+        text-align: center;
+    }
+    
+    :-moz-placeholder { /* Firefox 18- */
+        color:#a3a3a3;
+        text-align: center;  
+    }
+    
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color:#a3a3a3;
+        text-align: center;  
+    }
+    
+    :-ms-input-placeholder { 
+        color:#a3a3a3;
+        text-align: center; 
+    }
+
+    *.unselectable {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+    
+        /*
+            Introduced in IE 10.
+            See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+        */
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .headerCard{
+        border-bottom: 2px solid #f0b800;
+        background-color: #28a745;
+    }
+
+    .typeCard,
+    .pickerCard,
+    .selectCard{
+        background-color: #f6f6f6;
+        -webkit-box-shadow: inset 10px 10px 12px -12px rgba(140,140,140,1);
+        -moz-box-shadow: inset 10px 10px 12px -12px rgba(140,140,140,1);
+        box-shadow: inset 10px 10px 12px -12px rgba(140,140,140,1);
+    }
+
+    .pickerCard,
+    .selectCard{
+        border-radius: 5px;
+    }
+
+    //Custom Button
+    .cusbtn{
+        content: "";
+        width:25vw;
+        display: block;
+        padding-top: 10%;
+        padding-bottom: 5%;
+
+        color: #bfbfbf;
+        background-color: #fff;
+        border: 1px solid rgb(241, 241, 241);
+
+        // background-color: #cccccc;
+        // color: transparent;
+        // text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+        // -webkit-background-clip: text;
+        //     -moz-background-clip: text;
+        //         background-clip: text;
+    }
+
+    .cusbtn:active{
+        color: #fff;
+        background-color: #bfbfbf;
+    }
+
+
+    .keyText{
+        font-size: 2em;
+        font-weight: 1000;
+    }
+
+    .keyIcon{
+        font-size: 1.75em;
+    }
+    
+    .exposition{
+        font-size: .65em;
+        font-weight: bold;
+    }
+
+    .listText{
+        font: 900 20px arial, sans-serif;
+        background-color: #cccccc;
+        color: transparent;
+        text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+        -webkit-background-clip: text;
+            -moz-background-clip: text;
+                background-clip: text;
+    }
+
+    //Number Picker
+    .picker-container .picker-column .picker-item.picker-item-selected {
+        color: $theme-color1;
+    }
+
+    .picker-container .picker-highlight:before {
+        top: 1px;
+    }
+
+    .picker-container .picker-highlight:after {
+        bottom: -2px;
+    }
+
+    .picker-highlight::after, 
+    .picker-highlight:before {
+
+        height: 2px;
+        background-color: $theme-color1;
+    }
+}

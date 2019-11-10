@@ -5,3 +5,7 @@ body {
 .login__navbar > .ui.inverted.menu .item:before {
   background: transparent;
 }
+
+#root{
+  height: 100%;
+}
