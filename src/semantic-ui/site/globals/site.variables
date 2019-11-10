@@ -1,0 +1,10 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@fontName          : 'Prompt';
+@googleFontSizes   : '300,400,700,400italic,700italic';
+
+.ui.inverted.menu {
+  background: #393E45;
+}
