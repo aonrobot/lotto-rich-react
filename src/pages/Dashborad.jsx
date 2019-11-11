@@ -56,12 +56,12 @@ export default class Dashborad extends React.Component{
             ?
             obj.map((item,idx)=>{
                 return(
-                    <button type="button" class="btn cusbtn" key={idx}>
-                        <div>
+                    <Button type="button" className="btn cusbtn" style={{zIndex:1}} onClick={(e)=>{console.log(e.target.value)}} value={idx} key={idx}>
+                        <div className='unselectable' style={{zIndex:0}}>
                             <span className='keyText'>{item.key}</span><i className={`keyIcon ml-1 ${item.icon}`}/>
                         </div>
-                        <span className='exposition'> {item.text} </span>
-                    </button>
+                        <Label className='exposition unselectable' style={{zIndex:0}}> {item.text} </Label>
+                    </Button>
                     )
                 })
             :
@@ -111,12 +111,12 @@ export default class Dashborad extends React.Component{
                 </div>
                 {/* Select Type */}
                 <div className=''>
-                    {/* <Button.Group widths='5' color='green'>
+                    <Button.Group widths='5'>
                         {this.genTypeBtn(this.state.mock.type)}
-                    </Button.Group> */}
-                    <div class="btn-group" role="group">
+                    </Button.Group>
+                    {/* <div className="btn-group" role="group">
                         {this.genTypeBtn(this.state.mock.type)}
-                    </div>
+                    </div> */}
                 </div>
                 {/* Select Number */}
                 <div className='pickerCard d-flex flex-column card mx-3 mt-3 pb-3'>
@@ -129,7 +129,7 @@ export default class Dashborad extends React.Component{
                                     onChange={this.handleChange}
                                     height={150}
                                     itemHeight={25}
-                                />
+                                /> 
                             {/* </TabPane>
                             <TabPane id='Info' className='' tabId=''> */}
                                 {/* <NumberPicker
